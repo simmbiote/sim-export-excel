@@ -22,8 +22,6 @@ class ExportController
     private function export_excel()
     {
         $first_row = [];
-        ini_set('error_reporting', 'on');
-        ini_set('display_errors', 'on');
         foreach ($this->data['columns'] as $column) {
             $first_row[] = strtoupper($column);
         }

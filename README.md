@@ -35,6 +35,9 @@ Currently the following post types are supported:
 
 == Changelog ==
 
+= 1.0.1 =
+Composer tweaks
+
 = 1.0.0 =
 Composer tweak.
 

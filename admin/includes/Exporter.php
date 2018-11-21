@@ -37,7 +37,7 @@ class Exporter
                 global $wpdb;
 
                 $fields_query = "SELECT " . " DISTINCT({$wpdb->postmeta}.meta_key) as meta_field FROM {$wpdb->posts}
-LEFT JOIN {$wpdb->postmeta} on {$wpdb->postmeta}.post_id = `rlp2018_posts`.ID
+LEFT JOIN {$wpdb->postmeta} on {$wpdb->postmeta}.post_id = {$wpdb->posts}.ID
 where {$wpdb->posts}.post_type = '{$this->post_type}'";
 
                 $custom_fields = $wpdb->get_results($fields_query, OBJECT);
