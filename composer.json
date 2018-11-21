@@ -2,7 +2,7 @@
     "name": "simmbiote/sim-export-excel",
     "description": "Extend existing features of your WordPress admin interface to enable proper Excel exports of data (not just CSV).",
     "type": "wordpress-plugin",
-    "require": {
+    "require-dev": {
         "mk-j/php_xlsxwriter": "^0.37.0"
     },
     "license": "GPL-2.0-or-later",
