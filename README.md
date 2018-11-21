@@ -1,5 +1,6 @@
 === Sim Excel Export ===
-Contributors: (this should be a list of wordpress.org userid's)
+
+Contributors: simmbiote999
 Donate link: https://www.jbsimms.co.za
 Tags: excel, export, Flamingo
 Requires at least: 3.0.1
@@ -30,10 +31,6 @@ Currently you can install by either downloading this plugin and copying it to yo
 Currently the following post types are supported:
 
 * Flamingo Inbound Messages (`flamingo_inbound`)
-
-= What about foo bar? =
-
-Answer to foo bar dilemma.
 
 == Changelog ==
 
