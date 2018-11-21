@@ -25,7 +25,7 @@
  * Domain Path:       /languages
  */
 
-include('vendor/autoload.php');
+include('admin/vendor/autoload.php');
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
