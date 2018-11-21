@@ -1,20 +1,20 @@
 === Sim Excel Export ===
 
-Contributors: simmbiote999
-Donate link: https://www.jbsimms.co.za
-Tags: excel, export, Flamingo
-Requires at least: 3.0.1
-Tested up to: 3.4
-Stable tag: 4.3
-License: GPLv2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-
+Contributors: simmbiote999\
+Donate link: https://www.jbsimms.co.za \
+Tags: excel, export, Flamingo\
+Requires at least: 3.0.1\
+Tested up to: 3.4\
+Stable tag: 4.3\
+License: GPLv2 or later\
+License URI: http://www.gnu.org/licenses/gpl-2.0.html \\
+ 
+Extend existing features of your WordPress admin interface to enable proper Excel exports of data (not just CSV).\
+ 
+== Description ==  
+ 
 Extend existing features of your WordPress admin interface to enable proper Excel exports of data (not just CSV).
-
-== Description ==
-
-Extend existing features of your WordPress admin interface to enable proper Excel exports of data (not just CSV).
-If you use the popular [Flamingo plugin](https://wordpress.org/plugins/flamingo/) for your contact forms, you will find this plugin useful for exporting your inbound messages to a clean, well formatted Excel spreadsheet (as a pose to a broken CSV file). 
+If you use the popular [Flamingo plugin](https://wordpress.org/plugins/flamingo/) for your contact forms, you will find this plugin useful for exporting your inbound messages to a clean, well formatted Excel spreadsheet (as a pose to a broken CSV file).  
 
 Current support content types (post types) include:
 
