@@ -16,7 +16,7 @@
  * Plugin Name:       Sim Excel Export
  * Plugin URI:        sim-export-excel
  * Description:       Extend existing features of your backend to enable proper Excel exports (not just CSV) of data.
- * Version:           0.1
+ * Version:           1.0.0
  * Author:            John Simms
  * Author URI:        https://www.jbsimms.co.za
  * License:           GPL-2.0+

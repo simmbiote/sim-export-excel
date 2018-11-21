@@ -35,5 +35,8 @@ Currently the following post types are supported:
 
 == Changelog ==
 
+= 1.0.0 =
+Composer tweak.
+
 = 0.1 =
 Initial release. Support for Flamingo Inbound Messages post type.
