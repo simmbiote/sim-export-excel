@@ -7,7 +7,7 @@ Requires at least: 3.0.1\
 Tested up to: 3.4\
 Stable tag: 4.3\
 License: GPLv2 or later\
-License URI: http://www.gnu.org/licenses/gpl-2.0.html \\
+License URI: http://www.gnu.org/licenses/gpl-2.0.html  
  
 Extend existing features of your WordPress admin interface to enable proper Excel exports of data (not just CSV).\
  
@@ -22,7 +22,8 @@ Current support content types (post types) include:
 
 == Installation ==
 
-Currently you can install by either downloading this plugin and copying it to your /plugins/ folder, order you can install via composer.
+Currently you can install by either downloading this plugin and copying it to your /plugins/ folder, or if you use composer in your project use the following command: 
+`composer require simmbiote/sim-export-excel`.
 
 == Frequently Asked Questions ==
 
