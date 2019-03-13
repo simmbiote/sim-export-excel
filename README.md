@@ -35,6 +35,9 @@ Currently the following post types are supported:
 
 == Changelog ==
 
+= 1.1.0 =
+Added default configuration for other post types.
+
 = 1.0.1 =
 Composer tweaks
 

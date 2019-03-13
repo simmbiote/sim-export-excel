@@ -19,6 +19,13 @@ class ExportController
 
     private $server_file;
 
+    public function __construct()
+    {
+        /* Disable error warnings which prevent headers() from functioning. */
+        ini_set('error_reporting', 0);
+
+    }
+
     private function export_excel()
     {
         $first_row = [];
@@ -30,6 +37,7 @@ class ExportController
         $writer = new XLSXWriter();
 
         $writer->writeSheet($excel_data);
+
 
         header('Content-disposition: attachment; filename=' . $this->filename . ".xlsx");
         header('Content-type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet; charset=UTF-8');

@@ -65,8 +65,19 @@ class Sim_Export_Excel_Admin
 
         add_action('admin_menu', function () {
             global $submenu;
-            $url = 'options-general.php?sim_export=flamingo_inbound';
-            $submenu['flamingo'][] = array('Export Messages to Excel', 'edit_pages', $url);
+
+            $menus = [
+                'flamingo' => 'flamingo_inbound',
+                'edit.php?post_type=subscriber' => 'subscriber',
+                'edit.php?post_type=enquiry' => 'enquiry',
+                'edit.php?post_type=job' => 'job',
+            ];
+
+            foreach ($menus as $id => $pt) {
+                $submenu[$id][] = ['Export to Excel', 'edit_pages', "edit.php?post_type={$pt}&sim_export=1"];
+            }
+
+
         });
 
     }
@@ -155,7 +166,8 @@ class Sim_Export_Excel_Admin
 
         if (isset($_GET['sim_export']) && $_GET['sim_export']) {
             $exporter = new App\Exporter();
-            $exporter->post_type = $_GET['sim_export'];
+            $exporter->post_type = $_GET['post_type'];
+            $exporter->custom_field_prefix = 'rotpunkt_';
             $exporter->do_export();
         }
     }

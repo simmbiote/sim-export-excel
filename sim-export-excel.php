@@ -28,8 +28,8 @@
 include('admin/vendor/autoload.php');
 
 // If this file is called directly, abort.
-if ( ! defined( 'WPINC' ) ) {
-	die;
+if (!defined('WPINC')) {
+    die;
 }
 
 /**
@@ -37,34 +37,38 @@ if ( ! defined( 'WPINC' ) ) {
  * Start at version 1.0.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'PLUGIN_NAME_VERSION', '1.0.2' );
+if (!defined('PLUGIN_NAME_VERSION')) {
+    define('PLUGIN_NAME_VERSION', '1.1.0');
+}
 
 /**
  * The code that runs during plugin activation.
  * This action is documented in includes/class-sim-export-excel-activator.php
  */
-function activate_sim_export_excel() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sim-export-excel-activator.php';
-	Sim_Export_Excel_Activator::activate();
+function activate_sim_export_excel()
+{
+    require_once plugin_dir_path(__FILE__) . 'includes/class-sim-export-excel-activator.php';
+    Sim_Export_Excel_Activator::activate();
 }
 
 /**
  * The code that runs during plugin deactivation.
  * This action is documented in includes/class-sim-export-excel-deactivator.php
  */
-function deactivate_sim_export_excel() {
-	require_once plugin_dir_path( __FILE__ ) . 'includes/class-sim-export-excel-deactivator.php';
-	Sim_Export_Excel_Deactivator::deactivate();
+function deactivate_sim_export_excel()
+{
+    require_once plugin_dir_path(__FILE__) . 'includes/class-sim-export-excel-deactivator.php';
+    Sim_Export_Excel_Deactivator::deactivate();
 }
 
-register_activation_hook( __FILE__, 'activate_sim_export_excel' );
-register_deactivation_hook( __FILE__, 'deactivate_sim_export_excel' );
+register_activation_hook(__FILE__, 'activate_sim_export_excel');
+register_deactivation_hook(__FILE__, 'deactivate_sim_export_excel');
 
 /**
  * The core plugin class that is used to define internationalization,
  * admin-specific hooks, and public-facing site hooks.
  */
-require plugin_dir_path( __FILE__ ) . 'includes/class-sim-export-excel.php';
+require plugin_dir_path(__FILE__) . 'includes/class-sim-export-excel.php';
 
 /**
  * Begins execution of the plugin.
@@ -75,10 +79,12 @@ require plugin_dir_path( __FILE__ ) . 'includes/class-sim-export-excel.php';
  *
  * @since    1.0.0
  */
-function run_sim_export_excel() {
+function run_sim_export_excel()
+{
 
-	$plugin = new Sim_Export_Excel();
-	$plugin->run();
+    $plugin = new Sim_Export_Excel();
+    $plugin->run();
 
 }
+
 run_sim_export_excel();
